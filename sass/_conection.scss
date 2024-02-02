@@ -1,0 +1,72 @@
+.conection {
+  background: #ff8340;
+  padding: 40px 0px 165px 0;
+
+  &__title {
+    margin-bottom: 13px;
+    text-align: center;
+    color: #292929;
+    font-family: Arial;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160px; /* 355.556% */
+    letter-spacing: 2.25px;
+  }
+
+  &__line {
+    background: #292929;
+
+    width: 64px;
+    margin: 0 auto 50px auto;
+    height: 6px;
+    background-color: #000;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+
+    &__select {
+      display: flex;
+      width: 680px;
+      padding: 18px 538px 17px 34px;
+      align-items: center;
+      background: #292929;
+      color: #cfcfcd;
+    }
+
+    &__item {
+      width: 49%;
+      display: flex;
+      width: 680px;
+      padding: 18px 538px 17px 34px;
+      font-size: 20px;
+    }
+
+    &__input {
+      &::placeholder {
+        color: red;
+      }
+    }
+
+    &__massage {
+      display: flex;
+      padding: 18px 117px 157px 34px;
+      width: 100%;
+    }
+  }
+}
