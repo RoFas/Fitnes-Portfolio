@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness-Club</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -104,12 +110,10 @@
       </div>
     </section>
 
-    <section class="conection">
-      <div class="container">
-        <h2 class="conection__title">СВЯЖИТЕСЬ С НАМИ</h2>
-        <div class="conection__line"></div>
-
-        <p class="conection__description">
+    <section class="form">
+      <div class="container form__wrapper">
+        <h3 class="form__title">Свяжитесь с нами</h3>
+        <p class="form__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -118,77 +122,238 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <form action="" class="form">
-          <select name="" id="" class="form__select">
-            <option value="">Категория вопросов</option>
-            <option value="Вопрос1">Вопрос1</option>
-            <option value="Вопрос2">Вопрос2</option>
-            <option value="Вопрос3">Вопрос3</option>
-            <option value="Вопрос4">Вопрос4</option>
+        <form class="form__message" action="">
+          <select
+            class="form__message_select"
+            name="Категория вопроса"
+            id="category">
+            <option value="category">Категория вопроса</option>
           </select>
           <input
+            class="form__message_input"
             type="text"
-            class="form__item form__input"
-            placeholder="Ваше_Имя" />
+            id="name"
+            placeholder="Ваше имя" />
           <input
-            type="text"
-            class="form__item form__input"
+            class="form__message_input"
+            type="tel"
+            id="phone"
             placeholder="Телефон" />
           <input
-            type="text"
-            class="form__item form__input"
+            class="form__message_input"
+            type="e-mail"
+            id="mail"
             placeholder="E-mail" />
-          <textarea
-            name=""
-            id=""
-            class="form__massage"
-            placeholder="Текст сообщения"></textarea>
-          ЗАКАЗАТЬ ЗВОНОК
+          <textarea id="message" class="form__message_textarea">
+Текст сообщения</textarea
+          >
+          <input
+            type="button"
+            value="Заказать звонок"
+            class="form__message_button" />
         </form>
       </div>
     </section>
-
     <section class="system">
-      <div class="system__inner">
-        <h2 class="section-title system__inner-title">СИСТЕМА</h2>
-        <p class="system__inner-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
+      <div class="system__wrapper">
+        <div class="system__item">
+          <h2 class="system__item_title">Система</h2>
+          <p class="system__item_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div class="system__item">
+          <img
+            class="system__item_image"
+            src="./img/gym.png"
+            alt="Изображение спортивного зала" />
+        </div>
+        <div class="system__item">
+          <div class="system__item_icon">
+            <img src="./img/icon_1.svg" alt="Изображение Морковка" />
+            <p class="system__item_icon-title">Питание</p>
+            <p class="system__item_icon-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="system__item_icon">
+            <img src="./img/icon_2.svg" alt="Изображение Часы" />
+            <p class="system__item_icon-title">Режим</p>
+            <p class="system__item_icon-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="system__item_icon">
+            <img src="./img/icon_3.svg" alt="Изображение Гиря" />
+            <p class="system__item_icon-title">Программа</p>
+            <p class="system__item_icon-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="systen__item system__item-mode">
-        <img src="/img/Icon_2 1 (1).svg" alt="" class="system__item-icon" />
-        <h3 class="system__item-title">ПИТАНИЕ</h3>
-        <p class="system__item-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-
-      <div class="systen__item system__item-nutrition">
-        <img src="/img/Frame 28 (1).svg" alt="" class="system__item-icon" />
-        <h3 class="system__item-title">РЕЖИМ</h3>
-        <p class="system__item-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-
-      <div class="systen__item system__item-programm">
-        <img src="/img/Icon_4 1 (1).svg" alt="" class="system__item-icon" />
-        <h3 class="system__item-title">ПРОГРАММА</h3>
-        <p class="system__item-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-
-      <div class="system__previev"></div>
     </section>
+
+    <section class="slider-couch">
+      <div class="container">
+        <h2 class="section__title">ТРЕНЕРСКИЙ СОСТАВ</h2>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="/img/image 5.jpg" alt="" class="swiper-slide__prevu" />
+            <h2 class="swiper-slide__title">ДЖЕСС <br />ПАРКЕР</h2>
+            <span class="swiper-slide__derection">Персональный тренер</span>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/img/image 4.jpg" alt="" class="swiper-slide__prevu" />
+            <h2 class="swiper-slide__title">САРА <br />КОННОР</h2>
+            <span class="swiper-slide__derection">Персональный тренер</span>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/img/image 6.jpg" alt="" class="swiper-slide__prevu" />
+            <h2 class="swiper-slide__title">ОРЛАНДО <br />БЛУМ</h2>
+            <span class="swiper-slide__derection">Персональный тренер</span>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/img/image 7.jpg" alt="" class="swiper-slide__prevu" />
+            <h2 class="swiper-slide__title">АЛЕК <br />БОЛДУИН</h2>
+            <span class="swiper-slide__derection">Персональный тренер</span>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/img/image 8.jpg" alt="" class="swiper-slide__prevu" />
+            <h2 class="swiper-slide__title">ТЕРМИ <br />НАТОР</h2>
+            <span class="swiper-slide__derection">Персональный тренер</span>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="season">
+      <h2 class="season__normal">АБОНЕМЕНТ</h2>
+      <div class="contener">
+        <div class="season__card">
+          <div class="season__border">
+            <h4 class="season__number">1</h4>
+          </div>
+          <h2 class="season__title">МЕСЯЦ</h2>
+          <p class="season__derection">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="season__price">2 000 ₽</span>
+          <div class="contener">
+            <a href="#" class="bottom">Купить</a>
+          </div>
+        </div>
+
+        <div class="season__card">
+          <div class="season__border">
+            <h4 class="season__number">1</h4>
+          </div>
+          <h2 class="season__title">МЕСЯЦ</h2>
+          <p class="season__derection">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="season__price">2 000 ₽</span>
+          <div class="contener">
+            <a href="#" class="bottom">Купить</a>
+          </div>
+        </div>
+
+        <div class="season__card">
+          <div class="season__border">
+            <h4 class="season__number">1</h4>
+          </div>
+          <h2 class="season__title">МЕСЯЦ</h2>
+          <p class="season__derection">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="season__price">2 000 ₽</span>
+          <div class="contener">
+            <a href="#" class="bottom">Купить</a>
+          </div>
+        </div>
+
+        <div class="season__card">
+          <div class="season__border">
+            <h4 class="season__number">1</h4>
+          </div>
+          <h2 class="season__title">МЕСЯЦ</h2>
+          <p class="season__derection">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <span class="season__price">2 000 ₽</span>
+          <div class="contener">
+            <a href="#" class="bottom">Купить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="titleibel">
+      <h2 class="titleibel__end">ДОБРО ПОЖАЛОВАТЬ!</h2>
+    </div>
+
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8953cbeb096503f478df65c6d865f9b28e2a791e42ae08ad1843f27ac409a249&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__list-link"> О нас </a>
+            </li>
+
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__list-link"> Тренеры </a>
+            </li>
+
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__list-link"> Абонименты </a>
+            </li>
+
+            <li class="navigation__list-item">
+              <a href="#" class="navigation__list-link"> Контакты </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="developer">
+          <span class="developer__name"> blvckdesign </span>
+
+          <span class="developer__year"> 2023 </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/javaScript/script.js"></script>
   </body>
 </html>

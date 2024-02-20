@@ -68,5 +68,15 @@
       padding: 18px 117px 157px 34px;
       width: 100%;
     }
+
+    &__bottom {
+      color: var(--buttons-text-color-default, #292929);
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
   }
 }

@@ -1,0 +1,88 @@
+.season {
+  display: grid;
+
+  &__normal {
+    color: var(--background-3, #292929);
+    font-family: Arial;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px; /* 112.5% */
+  }
+
+  &__card {
+    width: 350px;
+    height: 686px;
+    border: 6px solid #ff8340;
+  }
+
+  &__border {
+    margin-top: 69px;
+    margin-left: 117px;
+    margin-bottom: 24px;
+    margin-right: 117px;
+    border: 4px #292929 solid;
+    border-radius: 100%;
+  }
+
+  &__number {
+    margin: 26px 26px;
+    color: #000;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__title {
+    margin-bottom: 74px;
+    color: #292929;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+
+  &__derection {
+    margin-bottom: 36px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+
+  &__price {
+    margin-bottom: 16px;
+    color: #292929;
+    font-family: Arial;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2.25px;
+  }
+}
+a {
+  margin-bottom: 32px;
+  color: var(--buttons-text-color-default, #292929);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.contener {
+  display: flex;
+  padding: 30px;
+  text-align: center;
+  gap: 40px;
+}
